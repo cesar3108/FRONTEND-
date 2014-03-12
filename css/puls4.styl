@@ -1,5 +1,6 @@
 borde_azul = #22BCE0
 gris_oscuro = #444
+naranja_color = #DD4F24
 body
 	background #E8E8E8
 	font-family Arial
@@ -10,10 +11,12 @@ header
 	background gris_oscuro
 	color white
 	padding 0.5em
+	position relative
 
 	.logo
 		border-right 1px solid borde_azul
 		width 60px
+		float left
 		img 
 			width 52px
 
@@ -25,8 +28,24 @@ header
 			margin 0
 			padding 0
 
-.left
-	float left
+	.usuario
+		position absolute
+		top 10px
+		right 10px
+		.avatar
+			img
+				width 50px
+				border-radius 50%
 
-.right
-	float right
+		.flechita
+			background naranja_color
+			color white
+			display block
+			text-align right
+			position absolute
+			width 2em
+			top 15%
+			left 0
+
+nav
+	background borde_azul

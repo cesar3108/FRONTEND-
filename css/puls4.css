@@ -8,10 +8,12 @@ header {
   background: #444;
   color: #fff;
   padding: 0.5em;
+  position: relative;
 }
 header .logo {
   border-right: 1px solid #22bce0;
   width: 60px;
+  float: left;
 }
 header .logo img {
   width: 52px;
@@ -25,9 +27,25 @@ header .titular .titulo {
   margin: 0;
   padding: 0;
 }
-.left {
-  float: left;
+header .usuario {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
-.right {
-  float: right;
+header .usuario .avatar img {
+  width: 50px;
+  border-radius: 50%;
+}
+header .usuario .flechita {
+  background: #dd4f24;
+  color: #fff;
+  display: block;
+  text-align: right;
+  position: absolute;
+  width: 2em;
+  top: 15%;
+  left: 0;
+}
+nav {
+  background: #22bce0;
 }
